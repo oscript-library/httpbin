@@ -10,7 +10,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        oscript_version: ['stable', 'dev']
+        oscript_version: ['default', 'lts']
+        test_engine: ['1testrunner']
+        include:
+          - oscript_version: 'stable'
+            test_engine: 'oneunit'
+          - oscript_version: 'dev'
+            test_engine: 'oneunit'
     uses: autumn-library/workflows/.github/workflows/test.yml@main
     with:
       oscript_version: ${{ matrix.oscript_version }}
+      test_engine: ${{ matrix.test_engine }}
