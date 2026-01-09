@@ -40,7 +40,7 @@ httpbin run
 | --- | --- | --- |
 | `-h`, `--host` | Имя хоста или IP-адрес сервиса | `127.0.0.1` |
 | `-p`, `--port` | TCP-порт сервиса | `3333` |
-| `--routes-handlers` | Путь к файлу или каталогу кастомных контроллеров | |
+| `-r`, `--routes`, `--routes-handlers` | Путь к файлу или каталогу кастомных контроллеров | |
 
 ### Тестирование с [asserts](https://github.com/oscript-library/asserts) и [1connector](https://github.com/vbondarevsky/1connector) <a name="testing"></a>
 
